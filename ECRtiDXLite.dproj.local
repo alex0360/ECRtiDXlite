@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/02/25 09:59:31.000.918,C:\Users\Servicios Especiales\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Servicios Especiales\Documents\Embarcadero\Studio\Projects\ECRtiDXLite\ECRtiDXLite.dproj</Transaction>
+    <Transaction>2020/02/25 09:59:46.000.134,=C:\Users\Servicios Especiales\Documents\Embarcadero\Studio\Projects\ECRtiDXLite\Unit1.pas</Transaction>
+    <Transaction>2020/02/25 10:00:09.000.601,C:\Users\Servicios Especiales\Documents\Embarcadero\Studio\Projects\ECRtiDXLite\Unit1.pas=C:\Users\Servicios Especiales\Documents\Embarcadero\Studio\Projects\ECRtiDXLite\UTComunicacion01.pas</Transaction>
+  </Transactions>
+</BorlandProject>
