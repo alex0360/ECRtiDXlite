@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes,
-  IdTCPConnection, IdTCPClient, IdBaseComponent, IdComponent, IdCustomTCPServer,
+  IdTCPConnection, IdTCPClient, IdBaseComponent, IdCustomTCPServer,
   IdTCPServer;
 
 type
@@ -14,7 +14,7 @@ type
   constructor Create(IPLocal: String; PuertoLocal: Integer; IPRemota: String; PuertoRemoto: Integer);
   function Enquire():String;
   function Synchronous():String;
-  function EnviarRecibirPOS():Boolean;
+  procedure EnviarRecibirPOS();
   function ECRPOS():Boolean;
   const
       ENQ : string = '';
@@ -61,7 +61,8 @@ var
   dataChar: char;
   bytes : Byte;
 begin
-    //ServidorCliente.OnConnect;
+    ServidorCliente.Active:=true;
+
 end;
 
 function TComunicacion01.Enquire: String;
@@ -82,7 +83,7 @@ begin
   end;
 end;
 
-function TComunicacion01.EnviarRecibirPOS: Boolean;
+procedure TComunicacion01.EnviarRecibirPOS;
 begin
     if Enquire = ACK then
     begin
